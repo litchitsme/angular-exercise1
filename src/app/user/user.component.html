@@ -1,1 +1,12 @@
-<p>user works!</p>
+
+
+    @for (user of users; track user.id) {
+        @if (user.age > 30) {
+            <p class="red borderuser marginy">{{user.name}} is {{user.age}} years old and retired.</p>
+        }
+        @else {
+            <p class="green borderuser marginy">{{user.name}} is {{user.age}} years old and fit for service.</p>
+        }
+    }
+    <p class="borderbottom marginy"></p>
+
